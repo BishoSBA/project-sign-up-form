@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Sign-up form</title>
+</head>
+<body>
+    <div class="container-1">
+        <header>
+            <a><img src="./odin-lined.png" alt="Logo"></a>
+            <h1>ODIN</h1>
+        </header>
+        <footer>Photo by Halie West on Unsplash</footer>
+    </div>
+    <main>
+        <h2> This is not a real online service!
+            Sign up <em>now</em> to get started. <br>
+            You <em>know</em> you want to.
+        </h2>
+
+        <form action="/example" method="post">
+            <section class="form-body">
+                <h2>Let's do this!</h2>
+                
+                <label for="firstName"> First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+                
+                <label for="lastName"> Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+                
+                <label for="email"> Email</label>
+                <input type="email" name="email" id="email" placeholder="name@example.com" required>
+                
+                <label for="phoneNumber"> Phone Number</label>
+                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="05xxxxxxxx" required>
+                
+                <label for="password"> Password</label>
+                <input type="password" name="password" id="password" placeholder="xxxxxxxx" required>
+                
+                <label for="confirmPassword"> Confirm Password</label>
+                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="xxxxxxxx" required>
+            </section>
+
+            <button> Create Account</button>
+            <span>Already have an account? <a href="#example">Log in</a></span>
+        </form>
+    </main>
+</body>
+</html>
