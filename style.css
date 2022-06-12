@@ -1,64 +1,101 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 @font-face {
-    font-family: "Norse";
-    src: url(./Norse-Bold.otf);
+	font-family: "Norse";
+	src: url(./assets/Norse-Bold.otf);
 }
-
-
 
 body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    margin: 0;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	margin: 0;
+	--side-margin: 40px;
 }
 
-.container-1{
-    background-image: url(./green-leaf-bg.jpg);
-    background-size:cover;
-    min-height: 100vh;
-    min-width: 40vw;
-    display: flex;
-    flex-direction: column;
+.container-1 {
+	background-image: url(./assets/green-leaf-bg.jpg);
+	background-size: cover;
+	min-height: 100vh;
+	min-width: 40vw;
+	display: flex;
+	flex: 1 1 auto;
+	flex-direction: column;
 }
 
 header {
-    display: flex;
-    font-family: 'Norse', sans-serif;
-    margin: 30vh 0 0;
-    background: rgb(0, 0, 0, .5);
-    min-width: auto;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    color: white;
-    font-size: 2rem;
+	display: flex;
+	height: fit-content;
+	min-width: auto;
+	justify-content: center;
+	align-items: center;
+	height: 120px;
+	font-family: "Norse", sans-serif;
+	margin: 30vh 0 0;
+	background: rgb(0, 0, 0, 0.7);
+	color: white;
+	font-size: 2.5rem;
 }
 
-header img{
-    width: 50px;
-    height: 60px;
-    margin: 0% 10px;
+header img {
+	aspect-ratio: initial;
+	height: 100px;
+	margin: 0% 10px;
 }
 
 footer {
-    margin-top: auto;
-    text-align: center;
-    color: white;
+	margin-top: auto;
+	text-align: center;
+	color: white;
 }
 
 main {
-    background-color:beige;
-    padding-top: 10vh;
+	background-color: beige;
+	padding-top: 8vh;
+	display: grid;
+	grid-template-rows: 100px 50px 50px 2fr 1fr;
 }
 
-main>h2 {
-    margin: 30px 30px 0;
-    
+main > h2 {
+	grid-row: span 1;
+	align-self: flex-end;
+	margin-left: var(--side-margin);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	grid-row: 4/5;
+}
+
+form h2 {
+	padding: 10px var(--side-margin);
+	background-color: white;
+	margin: 0;
+}
+
+.form-input {
+	width: max(200px, 50%);
+	height: 30px;
 }
 
 .form-body {
-    background-color: white;
-    width: 100%;
-    height: auto;
-    margin: 100px 10px 50px;
+	display: flex;
+	flex: 1 1 auto;
+	flex-wrap: wrap;
+	padding: 10px var(--side-margin);
+	background-color: white;
+}
+
+input {
+	border-radius: 5px;
+	height: 25px;
+	width: 250px;
+}
+
+label {
+	display: block;
+}
+
+button {
+	width: 160px;
+	margin: var(--side-margin);
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
     <script src="script.js"></script>
     <title>Sign-up form</title>
 </head>
+
 <body>
     <div class="container-1">
         <header>
-            <a><img src="./odin-lined.png" alt="Logo"></a>
+            <a><img src="./assets/odin-lined.png" alt="Logo"></a>
             <h1>ODIN</h1>
         </header>
         <footer>Photo by Halie West on Unsplash</footer>
@@ -20,34 +22,52 @@
         <h2> This is not a real online service!
             Sign up <em>now</em> to get started. </h2>
         <h2>You <em>know</em> you want to.</h2>
-        
+
 
         <form action="/example" method="post">
+            <h2>Let's do this!</h2>
             <section class="form-body">
-                <h2>Let's do this!</h2>
-                
-                <label for="firstName"> First Name</label>
-                <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
-                
-                <label for="lastName"> Last Name</label>
-                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
-                
-                <label for="email"> Email</label>
-                <input type="email" name="email" id="email" placeholder="name@example.com" required>
-                
-                <label for="phoneNumber"> Phone Number</label>
-                <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="05xxxxxxxx" required>
-                
-                <label for="password"> Password</label>
-                <input type="password" name="password" id="password" placeholder="xxxxxxxx" required>
-                
-                <label for="confirmPassword"> Confirm Password</label>
-                <input type="password" name="confirmPassword" id="confirmPassword" placeholder="xxxxxxxx" required>
+
+                <div class="form-input">
+                    <label for="firstName"> First Name</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
+
+                </div>
+                <div class="form-input">
+
+                    <label for="lastName"> Last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
+
+                </div>
+                <div class="form-input">
+
+                    <label for="email"> Email</label>
+                    <input type="email" name="email" id="email" placeholder="name@example.com" required>
+
+                </div>
+                <div class="form-input">
+
+                    <label for="phoneNumber"> Phone Number</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="05xxxxxxxx" required>
+
+                </div>
+                <div class="form-input">
+
+                    <label for="password"> Password</label>
+                    <input type="password" name="password" id="password" placeholder="xxxxxxxx" required>
+
+                </div>
+                <div class="form-input">
+
+                    <label for="confirmPassword"> Confirm Password</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword" placeholder="xxxxxxxx" required>
+                </div>
             </section>
 
-            <button> Create Account</button>
+            <button type="submit"> Create Account</button>
             <span>Already have an account? <a href="#example">Log in</a></span>
         </form>
     </main>
 </body>
+
 </html>
