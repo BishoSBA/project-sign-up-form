@@ -19,54 +19,46 @@
         <footer>Photo by Halie West on Unsplash</footer>
     </div>
     <main>
-        <h2> This is not a real online service!
+        <h2> This is not a real online service! Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Necessitatibus, commodi!. </br>
             Sign up <em>now</em> to get started. </h2>
         <h2>You <em>know</em> you want to.</h2>
 
-
-        <form action="/example" method="post">
+        <form id="sign-up" action="/example" method="post">
             <h2>Let's do this!</h2>
-            <section class="form-body">
 
-                <div class="form-input">
+            <section class="form-body">
+                <div class="form-input required">
                     <label for="firstName"> First Name</label>
                     <input type="text" name="firstName" id="firstName" placeholder="First Name" required>
-
                 </div>
                 <div class="form-input">
-
                     <label for="lastName"> Last Name</label>
-                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required>
-
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name">
                 </div>
-                <div class="form-input">
-
+                <div class="form-input required">
                     <label for="email"> Email</label>
                     <input type="email" name="email" id="email" placeholder="name@example.com" required>
-
                 </div>
                 <div class="form-input">
-
                     <label for="phoneNumber"> Phone Number</label>
-                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="05xxxxxxxx" required>
-
+                    <input type="tel" name="phoneNumber" id="phoneNumber" placeholder="05xxxxxxxx">
                 </div>
-                <div class="form-input">
-
+                <div class="form-input error required">
                     <label for="password"> Password</label>
                     <input type="password" name="password" id="password" placeholder="xxxxxxxx" required>
-
                 </div>
-                <div class="form-input">
-
+                <div class="form-input error required">
                     <label for="confirmPassword"> Confirm Password</label>
                     <input type="password" name="confirmPassword" id="confirmPassword" placeholder="xxxxxxxx" required>
                 </div>
             </section>
-
-            <button type="submit"> Create Account</button>
-            <span>Already have an account? <a href="#example">Log in</a></span>
         </form>
+        <div class="button-account">
+            <button type="submit" form="sign-up"> Create Account</button>
+            <span>Already have an account? <a href="#example">Log in</a></span>
+        </div>
+
     </main>
 </body>
 

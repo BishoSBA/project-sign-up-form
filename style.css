@@ -29,7 +29,7 @@ header {
 	align-items: center;
 	height: 120px;
 	font-family: "Norse", sans-serif;
-	margin: 30vh 0 0;
+	margin: 25vh 0 0;
 	background: rgb(0, 0, 0, 0.7);
 	color: white;
 	font-size: 2.5rem;
@@ -48,10 +48,11 @@ footer {
 }
 
 main {
-	background-color: beige;
+	background-color: rgb(245, 245, 245);
 	padding-top: 8vh;
 	display: grid;
-	grid-template-rows: 100px 50px 50px 2fr 1fr;
+	grid-template-columns: 1fr;
+	grid-template-rows: 150px 100px 30px 2fr 2fr;
 }
 
 main > h2 {
@@ -64,6 +65,8 @@ form {
 	display: flex;
 	flex-direction: column;
 	grid-row: 4/5;
+	font-size: 1.2rem;
+	box-shadow: 5px 5px 100px rgb(0, 0, 0, 0.3);
 }
 
 form h2 {
@@ -74,28 +77,60 @@ form h2 {
 
 .form-input {
 	width: max(200px, 50%);
-	height: 30px;
+	height: 80px;
 }
 
 .form-body {
 	display: flex;
 	flex: 1 1 auto;
 	flex-wrap: wrap;
-	padding: 10px var(--side-margin);
+	padding: 20px var(--side-margin);
 	background-color: white;
 }
 
 input {
-	border-radius: 5px;
-	height: 25px;
+	height: 30px;
 	width: 250px;
+	border: 1px solid rgb(0, 0, 0, 0.3);
+	border-radius: 5px;
+	margin: 5px 0px;
+}
+
+input:hover,
+input:focus {
+	box-shadow: 0px 0px 10px 2px rgb(0, 0, 0, 0.3);
+}
+
+.no-match {
 }
 
 label {
 	display: block;
 }
 
+.required label::after {
+	content: "*";
+	color: orangered;
+}
+.button-account {
+	margin: 0px var(--side-margin);
+	padding: 0px 0px 80px;
+	grid-row: 5/6;
+}
+
 button {
-	width: 160px;
-	margin: var(--side-margin);
+	display: block;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	background-color: #596d48;
+	color: white;
+	font-size: 1.2rem;
+	margin: var(--side-margin) 0px 15px;
+}
+
+.button-account span {
+	font-size: 0.9rem;
+	margin: 20px 0px;
 }
