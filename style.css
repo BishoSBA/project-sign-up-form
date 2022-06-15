@@ -42,29 +42,29 @@ header img {
 }
 
 footer {
-	margin-top: auto;
+	grid-row: 5/6;
+	align-self: flex-end;
 	text-align: center;
-	color: white;
+	color: black;
 }
 
 main {
 	background-color: rgb(245, 245, 245);
-	padding-top: 8vh;
 	display: grid;
 	grid-template-columns: 1fr;
-	grid-template-rows: 150px 100px 30px 2fr 2fr;
+	grid-template-rows: 200px 80px 3fr 2fr 100px;
 }
 
 main > h2 {
 	grid-row: span 1;
-	align-self: flex-end;
+	align-self: center;
 	margin-left: var(--side-margin);
 }
 
 form {
 	display: flex;
 	flex-direction: column;
-	grid-row: 4/5;
+	grid-row: 3/4;
 	font-size: 1.2rem;
 	box-shadow: 5px 5px 100px rgb(0, 0, 0, 0.3);
 }
@@ -115,7 +115,7 @@ label {
 .button-account {
 	margin: 0px var(--side-margin);
 	padding: 0px 0px 80px;
-	grid-row: 5/6;
+	grid-row: 4/5;
 }
 
 button {
@@ -133,4 +133,9 @@ button {
 .button-account span {
 	font-size: 0.9rem;
 	margin: 20px 0px;
+}
+
+.copyright {
+	color: black;
+	font-weight: 600;
 }
