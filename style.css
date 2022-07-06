@@ -36,7 +36,6 @@ header {
 }
 
 header img {
-	aspect-ratio: initial;
 	height: 100px;
 	margin: 0% 10px;
 }
@@ -61,12 +60,16 @@ main > h2 {
 	margin-left: var(--side-margin);
 }
 
+h2:first-child {
+	padding-top: 50px;
+}
+
 form {
 	display: flex;
 	flex-direction: column;
 	grid-row: 3/4;
-	font-size: 1.2rem;
-	box-shadow: 5px 5px 100px rgb(0, 0, 0, 0.3);
+	font-size: 1.6rem;
+	box-shadow: 5px 5px 100px rgb(0, 0, 0, 0.1);
 }
 
 form h2 {
@@ -89,11 +92,12 @@ form h2 {
 }
 
 input {
-	height: 30px;
-	width: 250px;
-	border: 1px solid rgb(0, 0, 0, 0.3);
+	width: 80%;
+	border: 3px solid #596d48;
 	border-radius: 5px;
 	margin: 5px 0px;
+	font-size: 1.3rem;
+	padding: 8px 15px;
 }
 
 input:hover,
@@ -110,7 +114,7 @@ label {
 
 .required label::after {
 	content: "*";
-	color: orangered;
+	color: red;
 }
 .button-account {
 	margin: 0px var(--side-margin);
@@ -126,16 +130,30 @@ button {
 	border: none;
 	background-color: #596d48;
 	color: white;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 	margin: var(--side-margin) 0px 15px;
+	box-shadow: 5px 5px 10px rgb(0, 0, 0, 0.5);
 }
 
 .button-account span {
-	font-size: 0.9rem;
+	font-size: 1.1rem;
 	margin: 20px 0px;
 }
 
 .copyright {
 	color: black;
 	font-weight: 600;
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+}
+
+a[href] {
+	text-decoration: none;
+}
+a:visited {
+	color: #596d48;
+}
+a:hover {
+	transform: scale(1.1);
+	text-decoration: underline black 3px;
 }
